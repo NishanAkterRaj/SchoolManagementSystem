@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0e9PeH19bDs82weESn5ZplvoSeAvWVuNpBsj0hulxT5Bx76zPf+Me9CVRaFFXNDbkQV+Y1YlN0KLzeAJQwnRxQ==",
+  "dgSpecHash": "ZM9DL72YkDM/sF5uWyQ+GWYrAqqKCXlZeUmLLdkmoLrNMeJy4HkT7sQ2Nf3Pcp9iZcuYr8QwXw9vMUW+2vGOQg==",
   "success": true,
-  "projectFilePath": "E:\\Project File\\CoreProject\\SchoolManagementSystem_V1\\SchoolManagementSystem_V1\\SchoolManagementSystem_V1.csproj",
+  "projectFilePath": "E:\\Project File\\CoreProject\\github\\SchoolManagementSystem\\SchoolManagementSystem_V1\\SchoolManagementSystem_V1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\compu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\compu\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
