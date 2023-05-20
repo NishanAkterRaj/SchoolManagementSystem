@@ -1,0 +1,53 @@
+﻿@model IEnumerable<SchoolManagementSystem_V1.Models.Shift>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ShiftName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ShiftType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndTime)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShiftName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShiftType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndTime)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ShiftId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ShiftId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ShiftId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

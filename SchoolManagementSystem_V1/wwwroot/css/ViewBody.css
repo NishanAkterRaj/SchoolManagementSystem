@@ -1,0 +1,38 @@
+﻿.body {
+   
+}
+
+/*View Page design*/
+.View_Body {
+    width:100%;
+    height: auto;
+    overflow:scroll;
+    box-sizing:border-box;
+}
+
+
+/*Create Page design*/
+
+.View_Create{
+    max-width: 400px;
+    height: auto;
+    margin:0 auto;
+}
+.View_Create h1{
+    text-align: center;
+    display:block;
+}
+    .View_Create h4 {
+        text-align: center;
+        display: block;
+    }
+    .View_Create .form-control{ 
+       min-width: 400px;
+    }
+    .View_Create input[type=submit]{
+        display: block ;
+        width: 200px;
+        height:auto;
+        margin: 0 auto;
+    }
+     

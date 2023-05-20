@@ -1,0 +1,53 @@
+﻿@model IEnumerable<SchoolManagementSystem_V1.Models.GradingSystem>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.GradeName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaxMarks)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MinimumMarks)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Class)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.GradeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaxMarks)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MinimumMarks)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Class.ClassId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.GradeId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.GradeId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.GradeId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

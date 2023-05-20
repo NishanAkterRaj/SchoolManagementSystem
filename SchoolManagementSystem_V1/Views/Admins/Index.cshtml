@@ -1,0 +1,94 @@
+﻿@model IEnumerable<SchoolManagementSystem_V1.Models.Admin>
+
+@{
+    ViewData["Title"] = "Admin";
+} 
+<div class="View_Body" >
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentManagement)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeacherManagement)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StuffManagement)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PaymentManagement)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExamManagement)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClassRoutineManagement)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SubjectManagement)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ResultManagement)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Teacher)
+            </th>
+            <th > Action </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentManagement)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeacherManagement)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StuffManagement)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PaymentManagement)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExamManagement)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClassRoutineManagement)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SubjectManagement)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResultManagement)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Teacher.TeacherId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AdminId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.AdminId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.AdminId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>

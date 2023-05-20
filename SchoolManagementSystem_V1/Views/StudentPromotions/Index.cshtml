@@ -1,0 +1,65 @@
+﻿@model IEnumerable<SchoolManagementSystem_V1.Models.StudentPromotion>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PromotionDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PromotionStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PromotionReason)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PromotionApprover)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Class)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Student)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PromotionDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PromotionStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PromotionReason)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PromotionApprover)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Class.ClassId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student.StudentId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.StudentPromotionId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.StudentPromotionId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.StudentPromotionId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
