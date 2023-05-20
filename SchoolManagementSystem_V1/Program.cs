@@ -37,7 +37,7 @@ namespace SchoolManagementSystem_V1_V1
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=SuperAdmins}/{action=Index}/{id?}");
 
             app.Run();
         }

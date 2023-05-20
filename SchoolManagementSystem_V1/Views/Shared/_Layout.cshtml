@@ -234,7 +234,7 @@
                         </li>
 
 
-                         <!-- Admin Panel Dropdown Menu -->
+                         <!-- Student Panel Dropdown Menu -->
                         <li class="dropdown w-100">
                            
                             <a class="btn nav-link dropdown-toggle btn-left" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -243,43 +243,39 @@
                             <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item w-100" asp-controller="Students">Student</a> 
                                 <a class="dropdown-item w-100" asp-controller="StudentSubjects">StudentSubject</a>
-                                <a class="dropdown-item w-100" asp-controller="StudentResults">StudentResult</a>
+                                <a class="dropdown-item w-100" asp-controller="StudentPryments">Student Payment</a>
                                 <a class="dropdown-item w-100" asp-controller="StudentPromotions">StudentPromotion</a>
                                 <a class="dropdown-item w-100" asp-controller="StudentPortals">StudentPortal</a>
                             </div>                            
                         </li>
 
-
+                         <!-- Teacher Panel Dropdown Menu -->
                         <li class="dropdown w-100">
 
                             <a class="btn nav-link dropdown-toggle btn-left" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-users"></i> <p>Teacher Panel</p>
                             </a>
                             <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item w-100" asp-controller="Admins">Admin</a>
-                                <a class="dropdown-item w-100" asp-controller="SuperAdmins">Super Admin</a>
+                                <a class="dropdown-item w-100" asp-controller="Teachers">Teacher</a> 
+                                <a class="dropdown-item w-100" asp-controller="TeacherSubjects">Teacher Subject</a>
+                                <a class="dropdown-item w-100" asp-controller="TeacherDesignations">Teacher Designations</a> 
+                                <a class="dropdown-item w-100" asp-controller="TeacherPortals">Teacher Portal</a>
                             </div>
-                        </li>
+                        </li> 
+                       
 
-                        <li class="dropdown w-100">
-
+                        <li class="dropdown w-100">                           
                             <a class="btn nav-link dropdown-toggle btn-left" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-user"></i> <p> Result Section</p>
-                            </a>
-                            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item w-100" asp-controller="Admins">Admin</a>
-                                <a class="dropdown-item w-100" asp-controller="SuperAdmins">Super Admin</a>
-                            </div>
-                        </li>
-
-                        <li class="dropdown w-100">
-                           
-                            <a class="btn nav-link dropdown-toggle btn-left" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-user"></i> <p>Exam Section</p>
+                                <i class="fas fa-user"></i> <p>Routine Section</p>
                             </a>                         
-                            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item w-100" asp-controller="Admins">Admin</a> 
-                                <a class="dropdown-item w-100" asp-controller="SuperAdmins">Super Admin</a>
+                            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton"> 
+
+                                
+                                <a class="dropdown-item w-100" asp-controller="ClassRoutines">Class Routine</a>
+                                <a class="dropdown-item w-100" asp-controller="StudentClassRoutines">Student Class Routine</a>
+                                <a class="dropdown-item w-100" asp-controller="StudentExamRoutines">Student Exam Routine</a>
+                                <a class="dropdown-item w-100" asp-controller="TeacherClassRoutines">Teacher Class Routine</a>
+                                <a class="dropdown-item w-100" asp-controller="TeacherExamRoutines">Teacher Exam Routine</a>
                             </div>                            
                         </li>
                         <li class="dropdown w-100">
@@ -288,11 +284,36 @@
                                 <i class="fas fa-user"></i> <p>School Section</p>
                             </a>
                             <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item w-100" asp-controller="Admins">Admin</a>
-                                <a class="dropdown-item w-100" asp-controller="SuperAdmins">Super Admin</a>
+                                <a class="dropdown-item w-100" asp-controller="Branches">Branche</a>
+                                <a class="dropdown-item w-100" asp-controller="Buildings">Building</a>
+                                <a class="dropdown-item w-100" asp-controller="Campus">Campus</a>
+                                <a class="dropdown-item w-100" asp-controller="Curricula">Curriculam</a>
+                                <a class="dropdown-item w-100" asp-controller="Designations">Designations</a>
+                              
                             </div>
                         </li>
 
+
+                        <li class="dropdown w-100">
+
+                            <a class="btn nav-link dropdown-toggle btn-left" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user"></i> <p>More Section</p>
+                            </a>
+                            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item w-100" asp-controller="Exams">Exam</a>  
+                                <a class="dropdown-item w-100" asp-controller="Stuffs">Stuffs</a>
+                                <a class="dropdown-item w-100" asp-controller="Shifts">Shift</a>
+                                <a class="dropdown-item w-100" asp-controller="Sessions">Session</a>
+                                <a class="dropdown-item w-100" asp-controller="Sections">Section</a>
+                                <a class="dropdown-item w-100" asp-controller="Rooms">Room</a>
+                                <a class="dropdown-item w-100" asp-controller="Groups">Groups</a>
+                            </div>
+                        </li>
+
+                          <!-- Result Panel Dropdown Menu -->
+                        <li class="nav-link">
+                                <a class="nav-item " asp-controller="StudentResults"><i class="fas fa-user"></i> <p>Result</p></a> 
+                        </li> 
                     </ul>
                 </nav> 
                 <!-- /.sidebar-menu -->
